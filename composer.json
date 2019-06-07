@@ -1,0 +1,42 @@
+{
+    "name": "omacesc/oma-rocks",
+    "description": "",
+    "keywords": [
+        "omacesc",
+        "oma-rocks"
+    ],
+    "homepage": "https://github.com/omacesc/oma-rocks",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Francesc Delgado",
+            "email": "cdelgado@omatech.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omacesc\\OmaRocks\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Omacesc\\OmaRocks\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
